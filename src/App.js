@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router} from 'react-router-dom'
+import { useAuth } from './hooks/auth.hook'
+import { AuthContext } from './context/AuthContext'
+import { Navbar } from './components/Navbar'
+import { AuthPage } from './pages/AuthPage'
+import { Contacts } from './pages/Contacts'
+import 'materialize-css'
 
 function App() {
+  const { login, logout, userId, userName } = useAuth()
+  const isAuthenticated = !!userId
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContext.Provider value={{
+      login, logout, userId, userName, isAuthenticated
+    }}>
+      <Router>
+        { isAuthenticated ? 
+          <div className="container">
+            <Navbar />
+            <Contacts />
+          </div>
+          :
+          <AuthPage />
+        }
+      </Router>
+    </AuthContext.Provider>
   );
 }
 

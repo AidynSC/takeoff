@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "~materialize-css/dist/css/materialize.min.css";
+
+.btn {
+  margin: 0 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.forms {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.createForm {
+  margin: 0 auto;
+}
+
+.searchForm {
+  margin: 0 auto;
+}
+
+.formTitle {
+  font-size: 18px;
+  text-align: center;
+}
+
+.nav-pagination {
+  background-color: #26a69a;
+}
+
+.pagination {
+  /* margin: 0 auto; */
+  justify-content:center;
+  text-align: center;
 }

@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "тест",
+      "password": "тест"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Владимир",
+      "contactInfo": "vladimir@mail.ru",
+      "userId": "1",
+      "id": "1"
+    },
+    {
+      "name": "Дмитрий",
+      "contactInfo": "8 999 999-99-99",
+      "userId": "1",
+      "id": "2"
+    },
+    {
+      "name": "Борис",
+      "contactInfo": "telegram @boris",
+      "userId": "1",
+      "id": "3"
+    },
+    {
+      "name": "Михаил",
+      "contactInfo": "mihail@yandex.ru",
+      "userId": "1",
+      "id": "SpxGKnf"
+    },
+    {
+      "name": "Константин",
+      "contactInfo": "kostya@ussr.ru",
+      "userId": "1",
+      "id": "-JaOLPB"
+    },
+    {
+      "name": "Юрий",
+      "contactInfo": "yura@gmail.com",
+      "userId": "1",
+      "id": "-EGraAZ"
+    },
+    {
+      "name": "Леонид",
+      "contactInfo": "lenya@rambler.ru",
+      "userId": "1",
+      "id": "1KEOVMk"
+    },
+    {
+      "name": "Никита",
+      "contactInfo": "instagram @nikitos",
+      "userId": "1",
+      "id": "SOzxoCf"
+    },
+    {
+      "name": "Иосиф",
+      "contactInfo": "style@killer.ru",
+      "userId": "1",
+      "id": "BGTKX0Z"
+    },
+    {
+      "name": "Владимир",
+      "contactInfo": "lenin@endempire.ru",
+      "userId": "1",
+      "id": "qvrypqn"
+    },
+    {
+      "name": "Николай",
+      "contactInfo": "kolya@thelastimperor.com",
+      "userId": "1",
+      "id": "LCkZ7Hx"
+    }
+  ]
+}
